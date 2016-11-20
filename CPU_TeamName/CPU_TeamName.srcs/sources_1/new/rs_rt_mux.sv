@@ -27,12 +27,11 @@ module rs_rt_mux(
     output logic [31:0] oppb
     );
         always_comb begin
-        if(sel) begin
+        if(sel) 
        assign oppb = imm;
-        end
-    else begin
+    else 
       assign oppb = rd2; 
-        end
+
         end 
 endmodule
 
