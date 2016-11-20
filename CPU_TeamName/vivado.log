@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Nov 19 19:17:54 2016
+# Process ID: 32020
+# Current directory: C:/Users/lople/Desktop/School Stuff/Engineering/EECS31L/CPU Final/CPU_TeamName
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20316 C:\Users\lople\Desktop\School Stuff\Engineering\EECS31L\CPU Final\CPU_TeamName\CPU_TeamName.xpr
+# Log file: C:/Users/lople/Desktop/School Stuff/Engineering/EECS31L/CPU Final/CPU_TeamName/vivado.log
+# Journal file: C:/Users/lople/Desktop/School Stuff/Engineering/EECS31L/CPU Final/CPU_TeamName\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lople/Desktop/School Stuff/Engineering/EECS31L/CPU Final/CPU_TeamName/CPU_TeamName.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 729.012 ; gain = 101.438
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 19 19:19:01 2016...
