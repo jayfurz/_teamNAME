@@ -1,0 +1,25 @@
+Created REGfile. just used the mem_twoport example.
+we changed the 2bit array to 32x64 and we set the two outputs equal to mem at the addresses provided by ra1,ra2.
+
+Want to make testbench for the regfile:
+set we=1;
+set ra1= 0 and ra2=1; => rd1==0 and rd2= 0;
+set wa=2 and wd=10 ;
+
+set we=0;
+ra1 = 2 and ra2 =3; =>rd1 and rd2 =0;
+set wa=0 and wd=25 ;
+
+set we=1
+==>rd1 = 10 and rd2 =0
+
+set we =0
+ra1=2 and ra2=0
+wa=1 wd=50;
+
+set we=1;
+==>rd1=10 and rd2=25;
+wa=1 wd=50
+
+set we=0;
+
