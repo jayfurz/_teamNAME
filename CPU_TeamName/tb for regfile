@@ -29,3 +29,4 @@ wanna see if when writing verification file, if we have to reassign each
 
 
 trying to run tests, the outputs are not changing, going to try to manually change variables on regfile.
+looks like the simulation responds, need to edit the testbench code and debug.
