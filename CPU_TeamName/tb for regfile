@@ -26,3 +26,6 @@ set we=0;
 using these conditions we will check if the outputs are equal to the ones we have theorized. 
 We are simply testing the clock and the registers in this function.
 wanna see if when writing verification file, if we have to reassign each 
+
+
+trying to run tests, the outputs are not changing, going to try to manually change variables on regfile.
