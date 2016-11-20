@@ -10,7 +10,7 @@ wire [31:0] rd1;
 wire [31:0] rd2;
 
 regfile regfile_inst (
-			.clk(clk);
+			.clk(clk),
 			.ra1(ra1),
 			.ra2(ra2),
 			.wa(wa),
