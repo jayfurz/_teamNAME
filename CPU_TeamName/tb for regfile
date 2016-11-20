@@ -23,3 +23,5 @@ wa=1 wd=50
 
 set we=0;
 
+using these conditions we will check if the outputs are equal to the ones we have theorized. 
+We are simply testing the clock and the registers in this function.
