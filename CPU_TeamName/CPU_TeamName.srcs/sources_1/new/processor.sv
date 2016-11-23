@@ -26,72 +26,75 @@ module processor(
     input [31:0] reg_write
     );
     //for pout and ins
-   logic [5:0]temp1;
+   logic [5:0]temppout;
    //for controller
-   logic [31:0]temp2;
-   logic [3:0] temp3;
-   logic [1:0] temp4;
-   logic temp5,temp6,temp7,temp8;
-   logic [5:0] temp9, temp10, temp11;
-   logic [14:0] temp12;
-   /*temp13, temp14, temp15, temp16, temp17, temp18,
-   temp19 ;*/
+   logic [31:0]tempinstruction;
+   logic [3:0] tempaluopsel;
+   logic [1:0] tempmode;
+   logic tempalusel,tempmemsel,tempregwe,tempmemwe;
+   logic [5:0] temprs, temprt, temprd;
+   logic [14:0] tempimm;
+   
+   logic [31:0]tempwd, temprd1, temprd2,tempextend,
+   tempoppb,tempresult,tempdatard, tempdatawd;
+   
+   
+    ;
    
     pc counter( .clk(clk),
           .rst(rst),
-          .pout(temp1));
+          .pout(temppout));
     
-    Imem instruct(.ins(temp1),
-                  .instruction(temp2)
+    Imem instruct(.ins(temppout),
+                  .instruction(tempinstruction)
                   );
    
-    control ctrl(.inst(temp2),
-                 .aluopsel(temp3),
-                 .mode(temp4),
-                 .alusel(temp5),
-                 .memsel(temp6),
-                 .regwe(temp7),
-                 .memwe(temp8),
-                 .rs(temp9),
-                 .rt(temp10),
-                 .rd(temp11),
-                 .imm(temp12)
+    control ctrl(.inst(tempinstruction),
+                 .aluopsel(tempaluopsel),
+                 .mode(tempmode),
+                 .alusel(tempalusel),
+                 .memsel(tempmemsel),
+                 .regwe(tempregwe),
+                 .memwe(tempmemwe),
+                 .rs(temprs),
+                 .rt(temprt),
+                 .rd(temprd),
+                 .imm(tempimm)
     );
-    /*
+    
     regfile regmem(.clk(clk),
-                   .ra1(temp9),
-                   .ra2(temp10),
-                   .wa(temp11),
-                   .wd(temp13),
-                   .we(temp7),
-                   .rd1(temp14),
-                   .rd2(temp15));
+                   .ra1(temprs),
+                   .ra2(temprt),
+                   .wa(temprd),
+                   .wd(tempwd),
+                   .we(tempregwe),
+                   .rd1(temprs),
+                   .rd2(temprt));
 
-    signext15t32 ext( .a(temp12),
-                      .out(temp16));
+    signext15t32 ext( .a(tempimm),
+                      .out(tempextend));
     
-    alusel mux1(.rd2(temp15),
-                .sel(temp5),
-                .imm(temp16),
-                .oppb(temp17));
+    alusel mux1(.rd2(temprs),
+                .sel(tempalusel),
+                .imm(tempextend),
+                .oppb(tempoppb));
     
-    alu_32bit alu(.op1(temp14),
-                  .op2(temp17),
-                  .opsel(temp3),
-                  .mode(temp4),
-                  .result(temp18));
+    alu_32bit alu(.op1(temprs),
+                  .op2(tempoppb),
+                  .opsel(tempaluopsel),
+                  .mode(tempmode),
+                  .result(tempresult));
     
     datamemory mem(.clk(clk),
-                   .address(temp18),
-                   .wd(temp15),
-                   .we2(temp8),
-                   .rd(temp19));
+                   .address(tempresult),
+                   .wd(temprt),
+                   .we2(tempmemwe),
+                   .rd(tempdatard));
     
-    memsel mux2(.rd(temp19),
-                .ALUres(temp18),
-                .sel(temp6),
-                .wd(temp13));
-    */
+    memsel mux2(.rd(tempdatard),
+                .ALUres(tempresult),
+                .sel(tempmemsel),
+                .wd(tempdatawd));
         
                                 
                                 
