@@ -24,9 +24,10 @@
 module control(
     input logic [31:0] inst,
     /*input reg r,*/ 
-    output logic [3:0] ALUopsel,
-    output logic MUXsel1,
-    output logic MUXsel2,
+    output logic [2:0] ALUopsel,
+    output logic mode,
+    output logic alusel,
+    output logic memsel,
     output logic Regwe,
     output logic Memwe,
     output logic [5:0] rs,
@@ -34,25 +35,48 @@ module control(
     output logic [5:0] rd,
     output logic [14:0] imm
     );
+    
+    parameter [3:0] functioncode;
             
-               always_ff @(posedge clk) begin
-                   if(inst[31] == 0) begin
+               always_combine begin
+                   if(inst[31] == 0) begin                                   //if R-type
                        rs <= inst[30:25];
                        rd <= inst[24:19];
-                       ALUopsel <= inst[18:15];
+                       mode <= inst[18];
+                       ALUopsel <= inst[17:15];
                        rt <= inst[14:9];
-                      MUXsel1 <= 0;
-                      end
-                   if( inst[31] == 1) begin
+                       imm <= 0;
+                       alusel <= 0;
+                   end
+                   
+                   if(inst[31] == 1) begin                                 //if I-type
                        rs <= inst[30:25];
                        rd <= inst[24:19];
-                       ALUopsel <= inst[18:15];
+                       rt <= 0;
+                       mode <= inst[18];
+                       ALUopsel <= inst[17:15];
                        imm <= inst[14:0];
+                       alusel <= 1;
+                   end
+                   
+                      
                   
-                  MUXsel1 <= 1; 
-                if(ALUopsel == 0100 || ALUopsel == 0110) begin
-                MUXsel2 <= 1; 
-                   Memwe <= 1;
+                 
+                   if(ALUopsel == 4'b0100) begin
+                       memsel <= 1;
+                       Regwe <= 1;
+                       memwe <=0;
+                   end
+                
+                   if(ALUopsel1 == 4'b0110) begin
+                       memsel <= 1;
+                       memwe <= 1;
+                       Regwe <= 0;
+                   end
+                   
+                 
+                   
+                   
                 end
                 else begin  
                 MUXsel2 <= 0;
