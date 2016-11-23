@@ -38,7 +38,13 @@ assign inst_mem[6] = 32'b00001110001010011000010000000000; //R5 = R7 - R2
 assign inst_mem[7] = 32'b10000000001100000000000000000110; //R6 = R0 + 6
 assign inst_mem[8] = 32'b00001100000000110000101000000000; //Store DM(R6) <- R5
 assign inst_mem[9] = 32'b00001100001100100000000000000000; //Load R6 <- DM(R6)
-
+genvar i;
+    generate 
+        for (i=10; i < 64 ; i++ ) begin
+            assign inst_mem[i] = 32'b00000000000001111000000000000000; //NOP
+        end
+    endgenerate
+    
     always_comb begin
          instruction <= inst_mem[ins];
    end
