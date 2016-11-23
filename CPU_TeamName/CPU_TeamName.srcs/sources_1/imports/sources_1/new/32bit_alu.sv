@@ -62,5 +62,6 @@ module alu_32bit ( op1 , op2 , opsel , mode , result , c_flag , z_flag , o_flag 
                            (op1[DWIDTH-1]===op2[DWIDTH-1] && op1[DWIDTH-1] !==result[DWIDTH-1])?1:0;
            assign z_flag = (result[DWIDTH-1] === 1'bz)? 1:0;
            assign s_flag = (result[DWIDTH-1] === 1'b1)? 1:0;
+    
 
 endmodule
