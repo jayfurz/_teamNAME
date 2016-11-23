@@ -25,18 +25,27 @@ module processor(
     input clk,
     input [31:0] reg_write
     );
-   wire temp1, temp2, temp3, temp4,temp5,temp6,temp7,temp8,temp9,
-   temp10,temp11,temp12, temp13, temp14, temp15, temp16, temp17, temp18,
-   temp19 ;
+    //for pout and ins
+   logic [5:0]temp1;
+   //for controller
+   logic [31:0]temp2;
+   logic [3:0] temp3;
+   logic [1:0] temp4;
+   logic temp5,temp6,temp7,temp8;
+   logic [5:0] temp9, temp10, temp11;
+   logic [14:0] temp12;
+   /*temp13, temp14, temp15, temp16, temp17, temp18,
+   temp19 ;*/
    
     pc counter( .clk(clk),
           .rst(rst),
           .pout(temp1));
     
-    Imem instruct(.ins(temp1) 
-                );
-    
-    control ctrl(
+    Imem instruct(.ins(temp1),
+                  .instruction(temp2)
+                  );
+   
+    control ctrl(.inst(temp2),
                  .aluopsel(temp3),
                  .mode(temp4),
                  .alusel(temp5),
@@ -48,6 +57,7 @@ module processor(
                  .rd(temp11),
                  .imm(temp12)
     );
+    /*
     regfile regmem(.clk(clk),
                    .ra1(temp9),
                    .ra2(temp10),
@@ -81,7 +91,7 @@ module processor(
                 .ALUres(temp18),
                 .sel(temp6),
                 .wd(temp13));
-    
+    */
         
                                 
                                 
