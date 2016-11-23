@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module rs_rt_mux(
+module alusel(
     input logic [31:0] rd2,
     input logic sel,
     input logic [31:0] imm,
