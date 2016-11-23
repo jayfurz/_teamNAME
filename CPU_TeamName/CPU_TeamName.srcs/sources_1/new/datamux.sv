@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module datamux(
+module memsel(
     input logic [31:0] rd,
     input logic [31:0] ALUres,
     input logic sel,
