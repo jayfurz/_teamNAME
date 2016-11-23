@@ -24,7 +24,6 @@
 module control(
     input logic [31:0] inst,
     /*input reg r,*/ 
-    input bit clk,
     output logic [3:0] ALUopsel,
     output logic MUXsel1,
     output logic MUXsel2,
@@ -37,22 +36,23 @@ module control(
     );
             
                always_ff @(posedge clk) begin
-                 if(inst[0:0] == 0) begin
-                      rs <= inst[6:1];
-                      rd <= inst[12:7];
-                      ALUopsel <= inst[16:13];
-                      rt <= inst[22:17];
+                   if(inst[31] == 0) begin
+                       rs <= inst[30:25];
+                       rd <= inst[24:19];
+                       ALUopsel <= inst[18:15];
+                       rt <= inst[14:9];
                       MUXsel1 <= 0;
                       end
-                if( inst[0:0] == 1) begin
-                  rs <= inst[6:1];
-                  rd <= inst[12:7];
-                  ALUopsel <= inst[16:13];
-                  imm <= inst[31:17];
+                   if( inst[31] == 1) begin
+                       rs <= inst[30:25];
+                       rd <= inst[24:19];
+                       ALUopsel <= inst[18:15];
+                       imm <= inst[14:0];
                   
                   MUXsel1 <= 1; 
                 if(ALUopsel == 0100 || ALUopsel == 0110) begin
                 MUXsel2 <= 1; 
+                   Memwe <= 1;
                 end
                 else begin  
                 MUXsel2 <= 0;
