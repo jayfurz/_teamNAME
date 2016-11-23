@@ -20,82 +20,38 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-
 module control(
-    input logic [31:0] inst,
-    /*input reg r,*/ 
-    output logic [2:0] aluopsel,
-    output logic mode,
-    output logic alusel,
-    output logic memsel,
-    output logic regwe,
-    output logic memwe,
-    output logic [5:0] rs,
-    output logic [5:0] rt,
-    output logic [5:0] rd,
-    output logic [14:0] imm
+    input reg [31:0] inst,
+    input reg r, 
+    input clk,
+    output reg ALUopsel,
+    output MUXsel1,
+    output MUXsel2,
+    output Regwe,
+    output Memwe,
+    output reg [5:0] rs,
+    output reg [5:0] rt,
+    output reg [5:0] rd,
+    output reg [14:0] imm
     );
-    
-    logic [3:0] functioncode;
+    initial begin
+            assign r = inst[0];
+            if(r == 0) begin
+            assign rs = inst[1:6];
+            assign rd = inst[7:12];
+            assign ALUopsel = inst[13:16];
+            assign rt = inst[17:22];
+            assign imm = inst[23:31];
+            end
+            else if(r == 1) begin 
+            assign rs = inst[1:6];
+            assign rd = inst[7:12];
+            assign ALUopsel = inst[13:16];
+            assign imm = inst[17:31];
+            end
+            end
             
-               always_comb begin
-                   if(inst[31] == 0) begin                                   //if R-type
-                       rs <= inst[30:25];
-                       rd <= inst[24:19];
-                       functioncode <= inst[18:15];
-                       rt <= inst[14:9];
-                       imm <= 0;
-                       alusel <= 0;
-                   end
-                   
-                   if(inst[31] == 1) begin                                 //if I-type
-                       rs <= inst[30:25];
-                       rd <= inst[24:19];
-                       rt <= 0;
-                       functioncode <= inst[18:15];
-                       imm <= inst[14:0];
-                       alusel <= 1;
-                   end
-                   
-                      
-                  //function code will decide what the opsel and mode will be
-                 
-                   if(functioncode == 4'b0100) begin
-                       memsel <= 1;
-                       regwe <= 1;
-                       memwe <=0;
-                       mode <= 0;
-                       aluopsel <= 3'b010;
-                       
-                   end
-                
-                   if(functioncode == 4'b0110) begin
-                       memsel <= 1;
-                       memwe <= 1;
-                       regwe <= 0;
-                       mode <= 0;
-                       aluopsel <= 3'b010;
-                   end
-                   
-                   if(functioncode != 4'b0110 && functioncode != 4'b0100) begin
-                       mode <= functioncode[3];
-                       aluopsel <= functioncode[2:0];
-                       memwe <= 0;
-                       memsel <= 0;
-                          if (functioncode == 4'b1111) begin
-                           regwe <= 0;
-                          end
-                          else begin
-                           regwe <= 1;
-                          end
-                   end
-                   
-                 
-                   
-                   
-                end
-                
-                                      
+            
                 
         /*always begin
         
@@ -104,6 +60,7 @@ module control(
         assign ALUopsel
      always begin
      assign ALUopsel = 
+
      
      
      end*/

@@ -1,3 +1,4 @@
+
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -20,10 +21,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module instruct(
-    input logic [6:0]ins,
-    input clk,
-    output [31:0] logic instruction
+module Imem(
+    input logic [5:0]ins,
+    output logic [31:0] instruction
     );
 logic [31:0] inst_mem[63:0];
     
@@ -39,11 +39,11 @@ assign inst_mem[7] = 32'b10000000001100000000000000000110; //R6 = R0 + 6
 assign inst_mem[8] = 32'b00001100000000110000101000000000; //Store DM(R6) <- R5
 assign inst_mem[9] = 32'b00001100001100100000000000000000; //Load R6 <- DM(R6)
 
-     always_ff @(posedge clk) begin
+    always_comb begin
          instruction <= inst_mem[ins];
-   end  
+   end
+   
     
     
     
 endmodule
-
