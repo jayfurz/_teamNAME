@@ -22,12 +22,12 @@
 
 module instruct(
     input [6:0]ins,
+    input clk,
     output [31:0] instruction
     );
-endmodule
-
 logic [31:0] inst_mem[63:0];
-
+    
+    
 assign inst_mem[0] = 32'b00000000000001111000000000000000; //NOP
 assign inst_mem[1] = 32'b10000000000010000000000000000001; //R1 = R0 + 1
 assign inst_mem[2] = 32'b10000010000100000000000000000001; //R2 = R1 + 1
@@ -38,3 +38,12 @@ assign inst_mem[6] = 32'b00001110001010011000010000000000; //R5 = R7 - R2
 assign inst_mem[7] = 32'b10000000001100000000000000000110; //R6 = R0 + 6
 assign inst_mem[8] = 32'b00001100000000110000101000000000; //Store DM(R6) <- R5
 assign inst_mem[9] = 32'b00001100001100100000000000000000; //Load R6 <- DM(R6)
+
+     always_ff @(posedge clk) begin
+         instruction <= inst_mem[ins];
+   end  
+    
+    
+    
+endmodule
+
