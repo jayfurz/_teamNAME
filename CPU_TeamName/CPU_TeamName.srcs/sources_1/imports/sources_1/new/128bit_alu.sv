@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alu_128bit ( op1 , op2 , opsel , mode , result , c_flag , z_flag , o_flag , s_flag );
+module alu_32bit ( op1 , op2 , opsel , mode , result , c_flag , z_flag , o_flag , s_flag );
 
     parameter DWIDTH = 32;
 
