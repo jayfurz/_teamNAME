@@ -29,8 +29,8 @@ module processor(
    logic [5:0]temppout;
    //for controller
    logic [31:0]tempinstruction;
-   logic [3:0] tempaluopsel;
-   logic [1:0] tempmode;
+   logic [2:0] tempaluopsel;
+   logic tempmode;
    logic tempalusel,tempmemsel,tempregwe,tempmemwe;
    logic [5:0] temprs, temprt, temprd;
    logic [14:0] tempimm;
@@ -68,18 +68,18 @@ module processor(
                    .wa(temprd),
                    .wd(tempwd),
                    .we(tempregwe),
-                   .rd1(temprs),
-                   .rd2(temprt));
+                   .rd1(temprd1),
+                   .rd2(temprd2));
 
     signext15t32 ext( .a(tempimm),
                       .out(tempextend));
     
-    alusel mux1(.rd2(temprs),
+    alusel mux1(.rd2(temprd2),
                 .sel(tempalusel),
                 .imm(tempextend),
                 .oppb(tempoppb));
     
-    alu_32bit alu(.op1(temprs),
+    alu_32bit alu(.op1(temprd1),
                   .op2(tempoppb),
                   .opsel(tempaluopsel),
                   .mode(tempmode),
@@ -87,7 +87,7 @@ module processor(
     
     datamemory mem(.clk(clk),
                    .address(tempresult),
-                   .wd(temprt),
+                   .wd(temprd2),
                    .we2(tempmemwe),
                    .rd(tempdatard));
     
