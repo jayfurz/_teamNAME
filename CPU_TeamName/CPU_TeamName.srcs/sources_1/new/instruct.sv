@@ -21,9 +21,9 @@
 
 
 module instruct(
-    input [6:0]ins,
+    input logic [6:0]ins,
     input clk,
-    output [31:0] instruction
+    output [31:0] logic instruction
     );
 logic [31:0] inst_mem[63:0];
     
