@@ -12,20 +12,23 @@ Aymaan and Justin will work on working on better verification implementation.
 on Tuesday we should be able to implement everything together and be able to test it as well.
 implement into fpga board.
 
+LOG 11-22-16
+Finished controller, Imem, PC, and started processor module.
 finished
 -regfile
 -regmux
 -datamemory
 -datamux
+-controller
+-Imem
+-PC
 
 
 started
--controller
+-processor
 
 
 to do:
--controller
--instruction
--(clock /PC but could be already done for us)
 -connecting
 -verifying
+-fpga board
