@@ -36,9 +36,9 @@ module control(
     output logic [14:0] imm
     );
     
-    parameter logic [3:0] functioncode;
+    logic [3:0] functioncode;
             
-               always_combine begin
+               always_comb begin
                    if(inst[31] == 0) begin                                   //if R-type
                        rs <= inst[30:25];
                        rd <= inst[24:19];
@@ -81,7 +81,8 @@ module control(
                        mode <= functioncode[3];
                        aluopsel <= functioncode[2:0];
                        memwe <= 0;
-                          if (functioncode != 4'b1111) begin
+                       memsel <= 0;
+                          if (functioncode == 4'b1111) begin
                            regwe <= 0;
                           end
                           else begin
@@ -93,13 +94,8 @@ module control(
                    
                    
                 end
-                else begin  
-                MUXsel2 <= 0;
-                end
                 
-           end                
-           end  
-             
+                                      
                 
         /*always begin
         
@@ -108,7 +104,6 @@ module control(
         assign ALUopsel
      always begin
      assign ALUopsel = 
-
      
      
      end*/
