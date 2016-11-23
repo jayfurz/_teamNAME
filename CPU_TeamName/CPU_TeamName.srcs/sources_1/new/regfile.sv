@@ -37,7 +37,7 @@ module regfile(
     logic [31:0] mem[63:0];
     
     always_ff @(posedge clk) begin
-        if(we)
+        if(we && wa == 5'b000000)
             mem[wa] <= wd;
         rd1 <= mem[ra1];
         rd2 <= mem[ra2];
