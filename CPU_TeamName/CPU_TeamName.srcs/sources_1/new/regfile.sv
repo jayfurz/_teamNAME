@@ -38,8 +38,8 @@ module regfile(
     always_ff @(posedge clk) begin
         if(we && wa != 5'b000000)
             mem[wa] <= wd;
-        rd1 <= mem[ra1];
-        rd2 <= mem[ra2];
+             assign rd1 = mem[ra1];
+             assign rd2 = mem[ra2];
    end  
     
       
