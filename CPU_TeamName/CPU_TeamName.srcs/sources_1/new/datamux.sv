@@ -29,8 +29,8 @@ module memsel(
     
      always_comb begin
            if(sel) 
-          assign wd = rd;  
+           wd = rd;  
        else 
-         assign wd = ALUres; 
+          wd = ALUres; 
          end
 endmodule

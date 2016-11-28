@@ -32,14 +32,19 @@ module regfile(
     output logic [31:0] rd1,
     output logic [31:0] rd2
     );
-    
+ 
     logic [31:0] mem[63:0];
     assign mem[0] = 0;
+    
+       always_comb begin
+             rd1 = mem[ra1]; 
+             rd2 = mem[ra2];
+     end
     always_ff @(posedge clk) begin
-        if(we && wa != 5'b000000)
+        if(we && wa != 5'b000000)begin
             mem[wa] <= wd;
-             assign rd1 = mem[ra1];
-             assign rd2 = mem[ra2];
+            end
+
    end  
     
       

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 11/19/2016 07:40:31 PM
+// Create Date: 11/08/2016 01:08:18 PM
 // Design Name: 
-// Module Name: rs_rt_mux
+// Module Name: mem_twoport
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,20 +20,20 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alusel(
-    input logic [31:0] rd2,
-    input logic sel,
-    input logic [31:0] imm,
-    output logic [31:0] oppb
+module mem_twoport(
+    input logic         clk,
+    input logic [8:0]   ra,
+    input logic [8:0]   wa,
+    input logic         write,
+    input logic [19:0]  d,
+    output logic [19:0] q    
     );
-        always_comb begin
-        if(sel) 
-        oppb = imm;
-    else 
-       oppb = rd2; 
 
-        end 
+    logic [19:0] mem [511:0];
+
+    always_ff @(posedge clk) begin
+        if (write)
+            mem[wa] <= d;
+        q <= mem[ra];
+    end
 endmodule
-
-
-        

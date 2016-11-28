@@ -66,7 +66,7 @@ module processor(
                    .ra1(temprs),
                    .ra2(temprt),
                    .wa(temprd),
-                   .wd(tempwd),
+                   .wd(reg_write),
                    .we(tempregwe),
                    .rd1(temprd1),
                    .rd2(temprd2));
@@ -94,7 +94,7 @@ module processor(
     memsel mux2(.rd(tempdatard),
                 .ALUres(tempresult),
                 .sel(tempmemsel),
-                .wd(tempwd));
+                .wd(reg_write));
         
                      
                                 
