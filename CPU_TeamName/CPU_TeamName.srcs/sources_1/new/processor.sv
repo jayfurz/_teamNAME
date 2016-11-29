@@ -24,10 +24,8 @@ module processor(
     input rst,
     input clk,
     output logic [31:0] reg_write_data
-    );
-    //for pout and ins
-   logic [5:0]temppout;
-   //for controller
+    );                                 
+   logic [5:0]temppout;                                  
    logic [31:0]tempinstruction;
    logic [2:0] tempaluopsel;
    logic tempmode;
