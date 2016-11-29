@@ -36,10 +36,10 @@ module regfile(
     logic [31:0] mem[63:0];
     assign mem[0] = 0;
     
-       always_comb begin
-             rd1 = mem[ra1]; 
-             rd2 = mem[ra2];
-     end
+      
+    rd1 = mem[ra1]; 
+    rd2 = mem[ra2];
+ 
     always_ff @(posedge clk) begin
         if(we && wa != 5'b000000)begin
             mem[wa] <= wd;
