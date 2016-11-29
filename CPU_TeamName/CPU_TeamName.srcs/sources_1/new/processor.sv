@@ -23,7 +23,7 @@
 module processor(
     input rst,
     input clk,
-    output logic [31:0] reg_write
+    output logic [31:0] reg_write_data
     );
     //for pout and ins
    logic [5:0]temppout;
@@ -66,7 +66,7 @@ module processor(
                    .ra1(temprs),
                    .ra2(temprt),
                    .wa(temprd),
-                   .wd(reg_write),
+                   .wd(reg_write_data),
                    .we(tempregwe),
                    .rd1(temprd1),
                    .rd2(temprd2));
@@ -94,7 +94,7 @@ module processor(
     memsel mux2(.rd(tempdatard),
                 .ALUres(tempresult),
                 .sel(tempmemsel),
-                .wd(reg_write));
+                .wd(reg_write_data));
         
                      
                                 
