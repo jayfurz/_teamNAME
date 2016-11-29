@@ -1,0 +1,93 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto aad68ceb4efc40f08759c22701074c13 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" Line 1. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.Imem
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.signext15t32
+Compiling module xil_defaultlib.alusel
+Compiling module xil_defaultlib.carry_gen
+Compiling module xil_defaultlib.arithmeticmuxop2
+Compiling module xil_defaultlib.arithmeticmuxcin
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.logicalmux
+Compiling module xil_defaultlib.modemux
+Compiling module xil_defaultlib.alu_1bit
+Compiling module xil_defaultlib.alu_32bit_default
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.memsel
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot processor_tb_behav

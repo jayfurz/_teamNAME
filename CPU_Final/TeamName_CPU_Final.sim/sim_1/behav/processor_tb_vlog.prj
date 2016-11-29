@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/modemux.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/logicalmux.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/fulladder.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/arithmeticmuxcin.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/arithmeticmux.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/carry_gen.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/alu_1bit.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/signext15t32.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/regfile.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/pc.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/instruct.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/datememory.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/datamux.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/control.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/alusel_mux.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/32bit_alu.sv"
+sv xil_defaultlib  "../../../TeamName_CPU_final.srcs/processor.sv"
+sv xil_defaultlib  "../../processor_tb.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

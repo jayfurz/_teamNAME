@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/modemux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modemux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/logicalmux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logicalmux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/arithmeticmuxcin.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arithmeticmuxcin
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/arithmeticmux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arithmeticmuxop2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/carry_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module carry_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/alu_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/signext15t32.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext15t32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/pc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/instruct.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/datememory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/datamux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memsel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/alusel_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alusel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/32bit_alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_32bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_final.srcs/processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_Final.sim/processor_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lople/Desktop/_teamNAME-master/TeamName_CPU_Final/TeamName_CPU_Final.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
