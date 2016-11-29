@@ -36,7 +36,7 @@ module processor(
    logic [14:0] tempimm;
    
    logic [31:0]tempwd, temprd1, temprd2,tempextend,
-   tempoppb,tempresult,tempdatard, tempdatawd;
+   tempoppb,tempresult,tempdatard;
    
    
     ;
