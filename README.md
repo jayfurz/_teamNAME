@@ -1,5 +1,7 @@
 # _teamNAME
-
+ABOUT THIS REPOSITORY
+This is a repository of a CPU that we made with systemVerilog on a FPGA board during my third year of
+undergraduate Electrical Engineering Studies. 
 
 LOG 11-19-16
 Today and tomorrow going to finish modules and logic blocks
